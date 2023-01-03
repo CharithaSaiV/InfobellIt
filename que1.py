@@ -1,0 +1,15 @@
+s1="a"
+s2="a"
+s3=""
+s4=""
+l=len(s1)//2
+s3=s1[:l]
+s4=s1[l:len(s1)]
+if(s3[::-1]+s4)==s2:
+    print("true")
+elif(s3+s4[::-1])==s2:
+    print("true")
+elif(len(s1)==1):
+    print("true")
+else:
+    print("false")
